@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="./Img/DI BRANCO LOGO.png">
+  <style>
+    a {
+      width: 100%;
+      text-align: center;
+    }
+    div {
+      text-align: center;
+    }
+    img {
+      width: 30%;
+      margin: auto;
+    }
+    p {
+      text-align: center;
+      margin: auto;
+    }
+    .text-container {
+      width: 100%;
+      color: white;
+      text-align: center;
+      padding-top: 10%;
+      font-size: 1.5rem;
+    }
+    body {
+      background-color: #ac2434;
+    }
+    footer {
+      display: block;
+    }
+    * {box-sizing:border-box}
+    .slideshow-container {
+      max-width: 85%;
+      margin: auto;
+      display: flex;
+      text-align: center;
+    }
+    .download-btn{
+  background-color: #8C2E40;
+  color: white;
+  padding: 1rem 2rem;
+  margin: auto;
+  font-size: 2rem;
+  border-radius: 5px;
+  display: flex;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: #BF7A87;
+}
+
+@media screen and (max-width: 850px) {
+  
+.slideshow-container {
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width: 450px) {
+  
+.slideshow-container {
+  max-width: 95%;
+  padding-top: 30%;
+}
+.download-btn{
+  font-size: 2rem;
+}
+img {
+      width: 70%;
+      margin: auto;
+    }
+}
+  </style>
+  <title>Cardapio</title>
+</head>
+<body >
+  <div><img src="./Img/DI BRANCO LOGO.png" alt=""></div>
+  <div class="text-container" >Caso o Download do Folder não inicie, clique no botão abaixo</div><br>
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    
+    
+      <a href="./pdf/KenyoEvenix.pdf" download='computer' class="download-btn"><p>Download <i class="fa fa-download"></i></p>
+      </a>
+      <a href="./pdf/KenyoEvenix.pdf" download='computer' class="download-btn start">Download teste
+        <i class="fa fa-download"></i>
+      </a>
+    
+  
+  </div>
+  
+  <script type="text/javascript">
+    const downloadBtn = document.querySelector(".start");
+  
+    downloadBtn.addEventListener("click", () => {
+      downloadBtn.style.display = "none";
+      //let download_href = "./icon.png";
+      //window.location.href = download_href;
+      
+    });
+
+    setTimeout(() => {
+      downloadBtn.click()
+    }, 0.01);
+  </script>
+</body>
+</html>
